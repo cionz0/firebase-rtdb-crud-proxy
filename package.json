@@ -11,7 +11,7 @@
     "test": "mocha --timeout 10000 --exit",
     "test:coverage": "nyc mocha --exit",
     "test:watch": "mocha --watch --exit",
-    "changelog": "node js-changelog --current"
+    "changelog": "js-changelog --current"
   },
   "repository": {
     "type": "git",
@@ -31,12 +31,12 @@
   },
   "homepage": "https://github.com/cionz0/firebase-rtdb-crud-proxy#readme",
   "dependencies": {
+    "@cionzo/js-changelog": "github:cionz0/js-changelog",
     "firebase-admin": "^11.10.1"
   },
   "devDependencies": {
     "chai": "^4.3.8",
     "eslint": "^8.48.0",
-    "js-changelog": "github:cionz0/js-changelog",
     "jsdoc": "^4.0.2",
     "mocha": "^10.2.0",
     "prompt-sync": "^4.2.0",
