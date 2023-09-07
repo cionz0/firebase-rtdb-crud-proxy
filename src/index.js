@@ -9,7 +9,7 @@
 
 const admin = require("firebase-admin");
 const DatabaseError = require("./database-errors").DatabaseError;
-const db = admin.database();
+let db ;
 
 /**
  * Create an entry in the Firebase Realtime Database.
@@ -20,6 +20,7 @@ const db = admin.database();
  */
 async function createEntry(path, data) {
     try {
+        db = db ||  admin.database();
         return db.ref(path).set(data);
     } catch (error) {
         // console.error(error);
@@ -36,6 +37,7 @@ async function createEntry(path, data) {
  */
 async function readDataFromNode(path) {
     try {
+        db = db ||  admin.database();
         return (await db.ref(path).once("value")).val();
     } catch (error) {
         // console.error(error);
@@ -52,6 +54,7 @@ async function readDataFromNode(path) {
  */
 async function updateDataAtPath(path, newData) {
     try {
+        db = db ||  admin.database();
         return await db.ref(path).update(newData);
     } catch (error) {
         // console.error(error);
@@ -67,6 +70,7 @@ async function updateDataAtPath(path, newData) {
  */
 async function deleteDataAtPath(path) {
     try {
+        db = db ||  admin.database();
         await db.ref(path).remove();
     } catch (error) {
         // console.error(error);
