@@ -1,6 +1,6 @@
 {
   "name": "firebase-rtdb-crud-proxy",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Provides a proxy for both CRUD and advanced operations on Firebase Realtime DataBase",
   "main": "src/index.js",
   "scripts": {
@@ -11,7 +11,11 @@
     "test": "mocha --timeout 10000 --exit",
     "test:coverage": "nyc mocha --exit",
     "test:watch": "mocha --watch --exit",
-    "changelog": "js-changelog --current"
+    "js-changelog": "npx @cionzo/js-changelog",
+    "changelog": "npx @cionzo/js-changelog --changelog firebase-rtdb-crud-proxy",
+    "rel:maj": "npx @cionzo/js-changelog --major ",
+    "rel:min": "npx @cionzo/js-changelog firebase-rtdb-crud-proxy --minor",
+    "rel:patch": "npx @cionzo/js-changelog firebase-rtdb-crud-proxy --patch"
   },
   "repository": {
     "type": "git",
