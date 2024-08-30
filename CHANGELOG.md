@@ -3,7 +3,7 @@
 
 ### Other
 
-* 2024-08-30T08:21:26.000Z [cionzo] - other: updated dependencies ([`b2484ca`](https://github.com/cionz0/firebase-rtdb-crud-proxy/commit/b2484ca54434ba1481e6f6d77565c7358bc5b8fc))
+* 2024-08-30T08:21:26.000Z [cionzo] - other: updated dependencies ([`df524fb`](https://github.com/cionz0/firebase-rtdb-crud-proxy/commit/df524fb9a0afc6f1ebfd277b819e769cfdc08d2f))
 * 2024-08-30T08:17:04.000Z [cionzo] - other: updated dependencies ([`dc5270a`](https://github.com/cionz0/firebase-rtdb-crud-proxy/commit/dc5270a3c90706c10ee7bc318bd652baf73190ba))
 # 1.2.0
 [8 September 2023]
